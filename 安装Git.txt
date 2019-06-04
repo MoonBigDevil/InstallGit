@@ -1,0 +1,28 @@
+	
+	1、git-scm.com 下载安装
+		1.1选择路径，直接下一步。爬帖子看翻译，各种设置
+		1.2配置环境变量，在path中添加D:Git/bin
+	2、打开git-bash
+		1.1输入命令 ssh-keygen -t rsa-C “854223000@qq.com”
+			生成SSH key
+			代码参数含义： 
+				-t 指定密钥类型，默认是 rsa ，可以省略。 
+				-C 设置注释文字，比如邮箱。 
+				-f 指定密钥文件存储文件名。
+			在bash里不行，连不上，在cmd里输了两遍
+			之后会确认一次，然后设置push的密码，确认密码，然后会成功
+		1.2 在bash中输入命令： clip <~/.ssh/id_rsa.pub
+			用来复制刚才生成的key
+	3 登录github，然后右上角点设置，找ssh，然后add ssh key 放进去
+	4 验证key是否成功绑定
+		4.1 在git-bash里输入 ssh -T git@ithub.com
+			提示链接超时，然后想起来在C:\Windows\System32\drivers\etc\ hosts文件中加了几行地址，然后删掉后就可以了
+			（好像也是在cmd里成功的）提示You've successfully authenticated, but GitHub does not provide shell access
+	5  命令行敲（因为配置了环境变量，所以在cmd里执行的）
+		git config --global user.name "MoonBigDevil"
+		git config --global user.email "854223000@qq.com"
+	6 clone github的库
+		6.1打开新建的库，然后在bash 中定位到想要clone的路径位置，如 cd/E/Git 
+		6.2 输入 git clone https://github.com/MoonBigDevil/InstallGit.git（后面网址是 自己的库的网址）
+	7 
+		
