@@ -31,6 +31,9 @@
 	8 再之后，你只需要将你的代码，放到库的对应的文件夹中，
 		然后使用，git add 、git commit -m "   " 、
 		最后git push origin master，将你的代码提交就可以了
+		 git add：把它添加到仓库/暂存区（个人理解：这个类似于选中的动作，选中它后我们就可以做其它对它的操作）
+		 git commit -m  把它提交到仓库, -m 是为了说明，可以填写任意内容，这个是为了记录你对这个文件做了什么操作
+		 git push 上传到gitHub仓库上
 	9 git push -u origin master 由于本地版本低于远程版本，所以就失败了，加-f是强制覆盖
 	10 git pull 不知道怎么用呢还
 		
