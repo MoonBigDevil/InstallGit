@@ -21,8 +21,14 @@
 	5  命令行敲（因为配置了环境变量，所以在cmd里执行的）
 		git config --global user.name "MoonBigDevil"
 		git config --global user.email "854223000@qq.com"
-	6 clone github的库
+	6 clone 到本地
 		6.1打开新建的库，然后在bash 中定位到想要clone的路径位置，如 cd/E/Git 
 		6.2 输入 git clone https://github.com/MoonBigDevil/InstallGit.git（后面网址是 自己的库的网址）
-	7 
+	7 上传
+		7.1 在自己本地的库中，新建一个任意文件
+		7.2 可以在bash里 ls 查看
+		7.3 git add 文件名.后缀名 ，然后git commit -m "这里面写备注"
+	8 再之后，你只需要将你的代码，放到库的对应的文件夹中，
+		然后使用，git add 、git commit -m "   " 、
+		最后git push origin master，将你的代码提交就可以了
 		
